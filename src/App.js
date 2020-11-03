@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
+import './App.css';
+import GoogleMaps from './Components/GoogleMaps';
+import MapPick from './Components/MapPicker';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Google Map</h2>
+      <div className="App-header">
+        <div id="map">
+          <MapPick />
+        </div>
+      </div>
     </div>
   );
 }
